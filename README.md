@@ -1,22 +1,14 @@
 # Applitools Tutorial - Selenium Python
 
-## Run the Example Project
-1. Download the example
-    * Option 1: `git clone https://github.com/applitools/tutorial-selenium-python.git`
-    * Option 2: [Download it](https://github.com/applitools/tutorial-selenium-python/archive/master.zip) as a Zip file and extract it
-2. Navigate to the `tutorial-selenium-python` folder
-3. Set up environment variable `APPLITOOLS_API_KEY` with your own API key.
-    * Login to Applitools > Click on the Person icon > My API Key
-    * Linux/Mac: export APPLITOOLS_API_KEY=<your_key>
-    * Windows: set APPLITOOLS_API_KEY=<your_key>
-4. Install Python package requirements
-    * `pip3 install -r requirements.txt`
-5. Run the tests
-    * `pytest tutorial.py`
+Get started with Applitools Eyes visual testing with this example of using Selenium Python and the [Eyes Selenium Python SDK](https://applitools.com/docs/api/eyes-sdk/index-gen/classindex-selenium-python_sdk4.html).
 
+Learn more about how to install and start this project with our [Selenium Python tutorial](https://applitools.com/tutorials/selenium-python.html)!
 
-## More Info
+<https://applitools.com/tutorials/selenium-python.html>
 
-Read more about Applitools and using Selenium Python at:
+## More Information
 
-https://www.applitools.com/tutorials/selenium-python.html
+Learn more about Applitools [Eyes](https://info.applitools.com/ucY77) and the [Ultrafast Test Cloud](https://info.applitools.com/ucY78) at [applitools.com](https://info.applitools.com/ucY76).
+
+More about the Eyes Images SDK:
+* https://applitools.com/docs/api/eyes-sdk/index-gen/classindex-selenium-python_sdk4.html
