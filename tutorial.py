@@ -19,7 +19,11 @@ def driver_setup():
     """
     New browser instance per test and quite.
     """
-    driver = webdriver.Chrome(ChromeDriverManager().install())
+    # Set chrome driver to headless when running on the CI
+    options = webdriver.ChromeOptions()
+    options.headless = (os.getenv('CI', 'False') == 'true')
+
+    driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
     yield driver
     # Close the browser.
     driver.quit()
@@ -52,7 +56,7 @@ def eyes_setup(runner, batch_info):
 
 def test_tutorial(eyes, driver):
     # Start the test and set the browser's viewport size to 800x600.
-    eyes.open(driver, "Test app", "First test", {"width": 800, "height": 600})
+    eyes.open(driver, "Demo app - Python - Basic", "First test", {"width": 800, "height": 600})
     # Navigate the browser to the "hello world!" web-site.
     driver.get("https://demo.applitools.com")
 
